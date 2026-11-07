@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dtg4-trainer-shell-v1';
+const CACHE_NAME = 'dtg4-trainer-shell-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
