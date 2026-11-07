@@ -1,0 +1,13 @@
+name = "dtg4-pronunciation"
+main = "src/index.js"
+compatibility_date = "2026-11-07"
+
+[[kv_namespaces]]
+binding = "AUDIO_CACHE"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+[vars]
+APP_ORIGIN = "https://nasir-work.github.io"
+GEMINI_MODEL = "gemini-3.8-flash-lite-tts"
+GEMINI_VOICE = "Kore"
+
