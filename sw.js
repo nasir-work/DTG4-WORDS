@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dtg4-trainer-shell-v3';
+const CACHE_NAME = 'dtg4-trainer-shell-v4';
 const SHELL = ['./manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
     await cache.addAll(SHELL);
     // The query string bypasses an older cache-first worker during upgrades.
     for (const path of ['./', './index.html']) {
-      const response = await fetch(`${path}?refresh=3`, { cache: 'reload' });
+      const response = await fetch(`${path}?refresh=4`, { cache: 'reload' });
       if (response.ok) await cache.put(path, response);
     }
     await self.skipWaiting();
